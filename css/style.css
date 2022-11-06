@@ -1,0 +1,265 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+h1 h2 h3 h4 h5 p ul{
+    margin: 0%;
+    padding: 0%;
+}
+header{
+    height: 80px;
+    margin: auto;
+}
+.head{
+    width:80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+}
+.head h1{
+    width: 60%;
+    margin:auto;
+    font-family: 'Dancing Script', cursive;
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: xx-large;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#299a0b+0,064405+29,084205+51,084205+61,299a0b+100 */
+    color: #299a0b; /* Old browsers */
+    color: -moz-linear-gradient(left,  #299a0b 0%, #064405 29%, #084205 51%, #084205 61%, #299a0b 100%); /* FF3.6-15 */
+    color: -webkit-linear-gradient(left,  #299a0b 0%,#064405 29%,#084205 51%,#084205 61%,#299a0b 100%); /* Chrome10-25,Safari5.1-6 */
+    color: linear-gradient(to right,  #299a0b 0%,#064405 29%,#084205 51%,#084205 61%,#299a0b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#299a0b', endColorstr='#299a0b',GradientType=1 ); /* IE6-9 */
+     ;
+}
+.head ul{
+    width: 30%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+.head ul li a img{
+    height: 60px;
+}
+
+.banner{
+    height:800px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: rgb(232, 203, 168);
+    
+}
+.gellary{
+    width: 80%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    margin:auto;
+    align-items: center;
+}
+.glry{
+    position: relative;
+    height: 200px;
+    width: 32%;
+    margin-bottom: 20px;
+}
+.glry img{
+    width: 100%;
+    height: 100%;
+
+}
+.glry h5{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family: 'Dancing Script', cursive;
+    color: cornsilk;
+    font-size: x-large;
+    font-weight: 700;
+    text-shadow: 2px 3px rgb(23, 22, 22);
+    
+}
+.glry h5:hover{
+    opacity: 0;
+}
+.glry::before{
+    content: "";
+    position: absolute;
+    background-color: #064405;
+    left:0;
+    top:0;
+    height:100%;
+    width: 100%;
+    transition: .6s all  ease-in-out;
+    cursor: pointer;
+}
+.glry:hover::before{
+    height:0%;
+    width: 0%;
+    cursor: pointer;
+
+}
+.content{
+    height: 300px;
+    margin-top: 30px;
+}
+.pre_sect{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+
+}
+.bird{
+    width: 32%;
+    height:250px;
+    box-shadow: 3px 4px 3px 4px #4e4141;
+}
+.bird img{
+    margin-left: 90px;
+    margin-bottom: 20px;
+
+}
+.bird p{
+    font-family: 'Roboto Mono', monospace;
+    color: purple;
+    font-style: italic;
+    font-weight: 600;
+
+}
+.fish{
+    width:32%;
+    height:250px;
+    box-shadow: 3px 4px 3px 4px #4e4141;
+}
+.fish img{
+    margin-left: 90px;
+    margin-bottom: 20px;
+
+}
+.fish p{
+    font-family: 'Roboto Mono', monospace;
+    color: rgb(243, 40, 40);
+    font-style: italic;
+    font-weight: 600;
+
+
+}
+.tree{
+    width:32%;
+    height:250px;
+    box-shadow: 3px 4px 3px 4px #4e4141;
+}
+.tree img{
+    width: 150px;
+    height: 100px;
+    margin-left: 90px;
+    margin-bottom: 20px;
+
+}
+.tree p{
+    font-family: 'Roboto Mono', monospace;
+    color: #076204;
+    font-style: italic;
+    font-weight: 600;
+
+}
+footer{
+    height: 80px;
+}
+.icn{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.icn ul{
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+.icn ul li{
+    list-style: none;
+    width: 60px;
+    height: 60px;
+    margin: 0 20px;
+    border: 3px solid green;
+    border-radius: 50%;
+    transition: all 0.5s;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.icn ul li i{
+    font-size: 30px;
+    color: green;
+    transition: all 0.5s;
+  }
+  
+.icn ul li:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(75, 175, 75);
+    border-radius: 50%;
+    z-index: -1;
+    transition: all 0.5s;
+    opacity: 0;
+  }
+  
+.icn ul li:hover:before{
+    opacity: 1;
+    transform: scale(0.8);
+  }
+  
+.icn ul li:hover{
+    cursor: pointer
+  }
+  
+.icn ul li:hover i{
+    color: white;
+  }
+  
+.icn ul li:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 50%;
+    z-index: -1;
+    transition: all 0.5s;
+    opacity: 0;
+    border: 2px dashed green;
+    box-sizing: border-box;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: scale(0.92) rotate(0deg)
+    }
+    100% {
+      transform: scale(0.92) rotate(360deg)
+    }
+  }
+  
+.icn li:hover:after{
+    opacity: 1;
+    animation: rotate 10s linear infinite;
+  }
